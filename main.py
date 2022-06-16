@@ -77,7 +77,6 @@ def get_discord_messages(token, chat_id,count=100):
 startMessages = getMessages()
 warnings.filterwarnings("ignore")
 a = subprocess.check_output('cd', shell=True)
-chromedriver = a[0:len(a)-2].decode()+"\chromedriver.exe"
 
 chat = input('Введите ссылку на чат   ')
 delay = int(input('Задержка в секундах    '))
